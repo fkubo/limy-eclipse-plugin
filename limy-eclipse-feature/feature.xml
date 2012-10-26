@@ -2,7 +2,7 @@
 <feature
       id="org.limy.eclipse.feature"
       label="Limy Eclipse"
-      version="1.5.8"
+      version="1.5.7.vqualifier"
       provider-name="limy.org">
    <install-handler/>
 
