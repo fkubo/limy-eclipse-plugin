@@ -78,6 +78,11 @@ public final class AccessorCreater {
         if (fieldComment == null || fieldComment.length() == 0) {
             tmpFieldComment = fieldName;
         }
+        // fk 2012.10.26 フィールドラベル補正追加
+        if (tmpFieldComment.endsWith(".")) {
+            tmpFieldComment = tmpFieldComment.substring(0,tmpFieldComment.length() - 1);
+        }
+        // fk 2012.10.26
         
         StringBuilder buff = new StringBuilder(256);
         appendJavadocGetter(buff, tmpFieldComment);
@@ -128,6 +133,11 @@ public final class AccessorCreater {
         if (fieldComment == null || fieldComment.length() == 0) {
             tmpFieldComment = myFieldName;
         }
+        // fk 2012.10.26 フィールドラベル補正追加
+        if (tmpFieldComment.endsWith(".")) {
+            tmpFieldComment = tmpFieldComment.substring(0,tmpFieldComment.length() - 1);
+        }
+        // fk 2012.10.26
 
         StringBuilder buff = new StringBuilder(256);
         appendJavadocSetter(buff, tmpFieldComment, myFieldName);

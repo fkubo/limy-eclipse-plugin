@@ -31,16 +31,4 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.limy.eclipse.qalab.LimyQalabNature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>limy-checks.xml</name>
-			<type>1</type>
-			<location>C:/var/doc/limy-checks.xml</location>
-		</link>
-		<link>
-			<name>limy-pmd-ruleset.xml</name>
-			<type>1</type>
-			<location>C:/var/doc/limy-pmd-ruleset.xml</location>
-		</link>
-	</linkedResources>
 </projectDescription>
